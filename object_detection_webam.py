@@ -193,8 +193,7 @@ def run_inference_for_single_image(image, graph):
 
 # In[ ]:
 # Detection
-import cv2
-cap = cv2.VideoCapture(0)
+import cv2 
 with detection_graph.as_default():
     with tf.Session(graph=detection_graph) as sess:
         while True:
